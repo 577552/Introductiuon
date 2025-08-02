@@ -1,0 +1,98 @@
+// Variables
+$primary-bg: #222;
+$primary-color: #2575fc;
+$light-bg: #f4f4f4;
+$card-bg: #ffffff;
+$text-color: #333;
+$link-color: white;
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: $light-bg;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: $primary-bg;
+  color: $link-color;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  nav {
+    a {
+      color: $link-color;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #6a11cb, $primary-color);
+  color: white;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: white;
+    color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+.about, .projects {
+  padding: 40px 20px;
+  background-color: $card-bg;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: $shadow;
+
+  h2 {
+    color: $primary-color;
+  }
+}
+
+.projects {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: #f0f0f0;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: $primary-bg;
+  color: $link-color;
+}
